@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@carterbox](https://github.com/carterbox/)
 * [@conda-forge/funcx](https://github.com/conda-forge/funcx/)
 
-
-<!-- dummy commit to enable rerendering -->
-
