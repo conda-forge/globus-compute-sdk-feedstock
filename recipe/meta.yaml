@@ -1,5 +1,5 @@
 {% set name = "globus-compute-sdk" %}
-{% set version = "2.2.3" %}
+{% set version = "2.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-compute-sdk-{{ version }}.tar.gz
-  sha256: d332bff727afa5e021608e5e7fac6d1cf9c8343e2358df9fc56cddd90d258dc0
+  sha256: f14897598e3b25d9ab97c9960dff99d18b8d294450321ccfa485bd63f0349f9f
 
 build:
   noarch: python
@@ -22,12 +22,12 @@ requirements:
     - python >=3.8
     - requests >=2.20.0
     - globus-sdk >=3.14.0,<4
-    - globus-compute-common ==0.2.0
-    - websockets ==10.3
-    - dill ==0.3.5.1
+    - globus-compute-common =0.2.0
+    - websockets =10.3
+    - dill =0.3.6
     - packaging >=21.1
     - pika >=1.2
-    - tblib ==1.7.0
+    - tblib =1.7.0
     - texttable >=1.6.7
     # Set minimum python version to 3.8 to remove typing extensions dependency
 
