@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
     - requests >=2.20.0
     - globus-sdk >=3.14.0,<4
-    - globus-compute-common =0.2.0
+    - globus-compute-common =0.3.0a2
     - websockets =10.3
     - dill =0.3.5.1
     - packaging >=21.1
