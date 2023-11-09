@@ -1,4 +1,4 @@
- {% set name = "globus-compute-sdk" %}
+{% set name = "globus-compute-sdk" %}
 {% set version = "2.7.0" %}
 
 package:
