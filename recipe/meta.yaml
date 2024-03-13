@@ -1,5 +1,5 @@
 {% set name = "globus-compute-sdk" %}
-{% set version = "2.14.0" %}
+{% set version = "2.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-compute-sdk-{{ version }}.tar.gz
-  sha256: ba1090999ae09a2d13c135ecb4735cf64b797d2853e2d73e063315bf32f67c9d
+  sha256: b2da0ce9e17a082c3c23fabf8541546b35a85210040fafc00ec51966a75c28f4
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.8
     - requests >=2.31.0,<3
-    - globus-sdk >=3.20.1,<4
+    - globus-sdk >=3.28.0,<4
     - globus-compute-common ==0.3.0
     - websockets ==10.3
     - dill ==0.3.5.1
