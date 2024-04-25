@@ -1,13 +1,13 @@
 {% set name = "globus-compute-sdk" %}
-{% set version = "2.18.1" %}
+{% set version = "2.19.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-compute-sdk-{{ version }}.tar.gz
-  sha256: 9d625afa124c43e392997978033604d620cf632e33d24dbaec83b04a67c114ab
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 5eee8ba28d063b32d2c54ad1ff65de65130ac65c60ef8ed128c093672b2d27a1
 
 build:
   noarch: python
