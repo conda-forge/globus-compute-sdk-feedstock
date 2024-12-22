@@ -12,11 +12,11 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
@@ -24,7 +24,7 @@ requirements:
     - psutil <6
     - rich ==13.7.1
     - typing_extensions >=4.0
-    - python >=3.8
+    - python >={{ python_min }}
     - requests >=2.31.0,<3
     - globus-sdk >=3.47.0,<4
     - globus-compute-common ==0.5.0
@@ -43,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/funcx-faas/funcx
