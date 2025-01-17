@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - requests >=2.31.0,<3
     - globus-sdk >=3.47.0,<4
     - globus-compute-common ==0.5.0
-    - websockets ==10.3
+    - websockets >=10.3
     - dill ==0.3.5.1
     - typing-extensions >=4.0
     - packaging >=21.1
