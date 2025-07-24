@@ -1,5 +1,5 @@
 {% set name = "globus-compute-sdk" %}
-{% set version = "3.10.0" %}
+{% set version = "3.11.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a165b923d1a0801441f0b300ab0e3df7b1a99ab90729c21840de4818e4fd1513
+  sha256: 5fb1b8a0b829fd597853461064a57dabe9ebc6f41e4fb69b3df2c2475fffefe0
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - typing_extensions >=4.0
     - python >={{ python_min }}
     - requests >=2.31.0,<3
-    - globus-sdk >=3.56.0,<4
+    - globus-sdk >=3.59.0,<4
     - globus-compute-common ==0.7.1
     - dill ==0.3.5.1
     - typing-extensions >=4.0
