@@ -1,5 +1,5 @@
 {% set name = "globus-compute-sdk" %}
-{% set version = "3.16.0" %}
+{% set version = "3.16.0a0" %}
 {% set python_min = "3.10" %}
 
 package:
