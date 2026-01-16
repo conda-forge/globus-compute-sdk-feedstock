@@ -147,7 +147,6 @@ Feedstock Maintainers
 * [@WardLT](https://github.com/WardLT/)
 * [@chris-janidlo](https://github.com/chris-janidlo/)
 * [@jan-janssen](https://github.com/jan-janssen/)
-* [@joshbryan-globus](https://github.com/joshbryan-globus/)
 * [@khk-globus](https://github.com/khk-globus/)
 * [@kylechard](https://github.com/kylechard/)
 * [@rjmello](https://github.com/rjmello/)
