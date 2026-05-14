@@ -1,5 +1,5 @@
 {% set name = "globus-compute-sdk" %}
-{% set version = "4.10.2" %}
+{% set version = "4.11.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 028eb96a637da1488b0541a132f8dd690d33d9e834adf2e175fcb52d948ca83a
+  sha256: 28d82b0e15c8428eff56a1005e79cfc3be5bff519d8597f463c69ddaa0a1715a
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - dill ==0.3.9
     - typing-extensions >=4.0
     - packaging >=21.1
-    - pika >=1.2
+    - pika >=1.2,<1.4
     - tblib ==1.7.0
     - texttable >=1.6.7
 
