@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: globus-compute-sdk
   version: "4.16.0"
-  python_min: "3.10"
 
 package:
   name: ${{ name|lower }}
@@ -20,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python 3.10.*
+    - python ${{ python_min }}.*
     - pip
     - setuptools
   run:
@@ -44,7 +43,9 @@ tests:
       imports:
         - globus_compute_sdk
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: "Globus Compute: High Performance Function Serving for Science"
