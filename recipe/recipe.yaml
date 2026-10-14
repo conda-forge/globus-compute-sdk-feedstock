@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: globus-compute-sdk
-  version: 4.18.0
+  version: "4.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: a2d058f3d1a2c94a58ba9f495918e1167700c159f71851be64a64f845c4ea8cf
+  sha256: f9bab9278f2ef5dff8083fabe1aab51575a40fb66031825e1e9a2f16af14fe7e
 
 build:
   number: 0
